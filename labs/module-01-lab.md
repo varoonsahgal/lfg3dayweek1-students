@@ -1,6 +1,6 @@
 # Module 01 Lab — Stand Up the TaskFlow Project
 
-## Overview
+## Student Overview
 
 In this lab you create the professional foundation that every later module builds on. You will scaffold the **TaskFlow** repository, isolate dependencies in a virtual environment, protect secrets, build a small utility module, and ship your first change through a Git branch and merge request. Along the way you'll use Claude Code as a reviewer — and deliberately reject a weak suggestion to practice critical review.
 
