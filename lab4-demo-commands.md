@@ -38,3 +38,16 @@ CREATE TABLE test_demo (
 );
 ```
 
+try these one by one: 
+
+```bash
+-- Insert a row
+INSERT INTO test_demo (name) VALUES ('hello database');
+
+-- Query it
+SELECT * FROM test_demo;
+
+-- Clean up
+DROP TABLE test_demo;
+```
+
