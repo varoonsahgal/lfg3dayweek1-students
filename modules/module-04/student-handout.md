@@ -42,7 +42,7 @@ TaskFlow has a classic **one-to-many** relationship: one `Project` has many `Tas
 
 #### Visual:
 
-<img width="914" height="486" alt="Screenshot 2026-06-23 at 9 31 44 AM" src="https://github.com/user-attachments/assets/096236f9-2f24-47d1-9a50-12c585cedfec" />
+<img width="705" height="539" alt="Screenshot 2026-06-23 at 10 23 23 PM" src="https://github.com/user-attachments/assets/7e674092-2481-4e46-a5be-a4065233080b" />
 
 
 **Constraints** protect data integrity:
