@@ -35,13 +35,12 @@ By the end of this module, you can:
 
 The **engine** (Module 04) manages connections. The **session** is your workspace for a unit of work: you add and modify objects, then `commit` to persist them or `rollback` to discard them. SQLAlchemy tracks your changes and writes them out as one consistent batch.
 
-#### Suggested Visual
+#### Visual:
 
-**Type:** Flowchart
-**Purpose:** Make the session lifecycle concrete — the #1 confusion point.
-**Placement:** Right after this paragraph.
-**Caption:** *The session lifecycle: open → use → commit or rollback → close.*
-**What to show:** A vertical flow: **Open session** → **Add/query/modify objects** → decision diamond **Success?** → on *yes* **commit()** → **close()**; on *no* **rollback()** → **close()**. Annotate that `close()` always runs (use a `with` block or `try/finally`), and that forgetting `commit()` silently discards changes.
+<img width="440" height="550" alt="Screenshot 2026-06-24 at 12 00 43 PM" src="https://github.com/user-attachments/assets/1e20fcc7-2c46-4ef1-9e1f-d745f1e5c7dd" />
+
+
+
 
 ### 2. Managing sessions safely
 
