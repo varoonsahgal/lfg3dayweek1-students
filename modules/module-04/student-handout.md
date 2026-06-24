@@ -79,7 +79,6 @@ from dotenv import load_dotenv
 load_dotenv()
 DATABASE_URL = os.environ["DATABASE_URL"]   # fail fast if missing
 ```
-<img width="708" height="535" alt="Screenshot 2026-06-23 at 10 22 10 PM" src="https://github.com/user-attachments/assets/9979f5f4-0ddb-4a94-bb5e-fe8669f35841" />
 
 > **⚖️ Tradeoff:** `os.environ["DATABASE_URL"]` crashes loudly if the variable is missing; `os.environ.get(...)` returns `None` and fails later with a confusing error. At startup, prefer the loud crash — a clear "missing config" failure beats a mysterious one ten layers deep.
 
