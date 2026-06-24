@@ -28,3 +28,13 @@ pip install "sqlalchemy>=2.0" "psycopg[binary]" python-dotenv
 ```bash
 psql "postgresql://demouser:demosecret@localhost:5433/demodb"
 ```
+
+Run this:
+
+```bash
+CREATE TABLE test_demo (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL
+);
+```
+
