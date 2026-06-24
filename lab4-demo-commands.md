@@ -24,3 +24,7 @@ Install packages:
 ```bash
 pip install "sqlalchemy>=2.0" "psycopg[binary]" python-dotenv
 ```
+
+```bash
+psql "postgresql://demouser:demosecret@localhost:5433/demodb"
+```
