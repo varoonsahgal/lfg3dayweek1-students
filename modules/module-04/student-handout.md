@@ -40,13 +40,10 @@ A relational database stores data in **tables** (rows and columns). Two ideas ma
 
 TaskFlow has a classic **one-to-many** relationship: one `Project` has many `Task`s.
 
-#### Suggested Visual
+#### Visual:
 
-**Type:** Schema / ER Diagram
-**Purpose:** Help learners see how `Project` and `Task` connect via a foreign key before they write the models.
-**Placement:** Immediately after this section.
-**Caption:** *TaskFlow's one-to-many schema: each Task belongs to one Project.*
-**What to show:** Two boxes. `projects` (`id` PK, `name`, `created_at`) and `tasks` (`id` PK, `title`, `priority`, `done`, `project_id` FK → `projects.id`). Draw the relationship as a line from `tasks.project_id` to `projects.id` marked "many-to-one (each task → one project; each project → many tasks)."
+<img width="914" height="486" alt="Screenshot 2026-06-23 at 9 31 44 AM" src="https://github.com/user-attachments/assets/096236f9-2f24-47d1-9a50-12c585cedfec" />
+
 
 **Constraints** protect data integrity:
 
@@ -82,6 +79,7 @@ from dotenv import load_dotenv
 load_dotenv()
 DATABASE_URL = os.environ["DATABASE_URL"]   # fail fast if missing
 ```
+<img width="708" height="535" alt="Screenshot 2026-06-23 at 10 22 10 PM" src="https://github.com/user-attachments/assets/9979f5f4-0ddb-4a94-bb5e-fe8669f35841" />
 
 > **⚖️ Tradeoff:** `os.environ["DATABASE_URL"]` crashes loudly if the variable is missing; `os.environ.get(...)` returns `None` and fails later with a confusing error. At startup, prefer the loud crash — a clear "missing config" failure beats a mysterious one ten layers deep.
 
