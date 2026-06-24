@@ -18,3 +18,9 @@ Create a scratch directory for demo files:
 mkdir -p /tmp/demo04
 cd /tmp/demo04
 ```
+
+
+Install packages:
+```bash
+pip install "sqlalchemy>=2.0" "psycopg[binary]" python-dotenv
+```
